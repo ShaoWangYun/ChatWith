@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/login_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <RelativeLayout
+       android:id="@+id/rl_friend_title"
+       android:layout_marginTop="10dp"
+       android:layout_width="match_parent"
+       android:layout_height="50dp">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="好友列表"
+          android:textSize="23sp"
+          android:textStyle="bold"
+          android:textColor="#283951"
+          android:layout_centerHorizontal="true"
+          android:layout_centerVertical="true"/>
+
+      <ImageView
+          android:id="@+id/img_add_friend"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/img_friend_add"
+          android:layout_alignParentRight="true"
+          android:layout_marginRight="10dp"
+          android:layout_centerVertical="true"/>
+
+   </RelativeLayout>
+
+   <RelativeLayout
+       android:id="@+id/rl_noFriendData"
+       android:visibility="gone"
+       android:clickable="true"
+       android:layout_below="@+id/rl_friend_title"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+      <ImageView
+          android:id="@+id/img_noFriendData"
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:layout_marginTop="150dp"
+          android:layout_centerHorizontal="true"
+          android:src="@drawable/img_nofrienddata"/>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="25sp"
+          android:textColor="#8a8a8a"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="10dp"
+          android:layout_below="@+id/img_noFriendData"
+          android:text="您还没有好友，\n快添加好友开始聊天吧"/>
+
+   </RelativeLayout>
+
+   <android.support.v7.widget.RecyclerView
+       android:id="@+id/recycler_friend"
+       android:visibility="gone"
+       android:layout_marginTop="5dp"
+       android:layout_below="@+id/rl_friend_title"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+   </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

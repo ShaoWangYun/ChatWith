@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context="com.dxxy.chatwith.activity.LoginActivity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/rl_input_username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/logo_common" />
+
+    <RelativeLayout
+        android:id="@+id/rl_input_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rl_input_password"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <ImageView
+            android:id="@+id/img_username"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/login_username"
+            android:textSize="20sp" />
+
+        <com.dxxy.chatwith.widget.LineEditText
+            android:id="@+id/et_username"
+            style="?android:attr/textViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Shaowangyun"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img_username"
+            android:background="@null"
+            android:ems="10"
+            android:hint="请输入用户名" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_input_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <ImageView
+            android:id="@+id/img_password"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/login_password"
+            android:textSize="20sp" />
+
+        <com.dxxy.chatwith.widget.LineEditText
+            android:id="@+id/et_password"
+            style="?android:attr/textViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="123456"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img_password"
+            android:layout_toLeftOf="@+id/img_manage_password"
+            android:background="@null"
+            android:hint="请输入密码"
+            android:inputType="textPassword" />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:id="@+id/img_manage_password"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/hidepassword"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/rl_input_password"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button_ring_shape_transparent"
+        android:gravity="center"
+        android:text="登录"
+        android:textAllCaps="false"
+        android:textColor="#283951"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btn_login"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button_ring_shape_transparent"
+        android:text="注册"
+        android:textAllCaps="false"
+        android:textColor="#283951"
+        android:textSize="25sp" />
+
+    <RelativeLayout
+        android:layout_below="@+id/btn_register"
+        android:layout_alignRight="@+id/btn_register"
+        android:layout_alignLeft="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/cb_remember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="记住账号" />
+
+        <TextView
+            android:id="@+id/text_resetPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/cb_rememberAccount"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="忘记密码?"
+            android:textColor="#283951"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/text_switch_to_server_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:clickable="true"
+        android:text="点击切换到服务器模式"
+        android:textColor="#283951" />
+
+</RelativeLayout>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context="com.dxxy.chatwith.activity.ServerActivity">
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text=" ~#~（欢迎领导莅临侯消息大厅）~#~ "
+        android:textColor="#f00"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/text_title"
+        android:layout_marginTop="10dp"
+        android:background="#000" />
+
+    <com.dxxy.chatwith.widget.ForcedTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="都~说 高处不~胜寒~~,我现在是不是冻得小脸煞白。。。。啊 啊 啊 嚏=====看来得申请特别供暖。。。。必须申请！（一脸衰样）"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="" />
+
+    <com.dxxy.chatwith.widget.ForcedTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="冲鸭！！！（破锣嗓）"
+        android:textColor="#0f0"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <com.dxxy.chatwith.widget.ForcedTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="前排出售广告位，欲购从速"
+        android:textColor="#0f0"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <com.dxxy.chatwith.widget.ForcedTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/img_server_is_running"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="哎哎，前面的信息麻烦让让，我这次再到达不了就要完蛋了！！！我上有八十老母下有三岁儿童，一场无情的大火，摧毁了我的家园哪。。"
+        android:textColor="#f0f"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <com.dxxy.chatwith.widget.ForcedTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/img_server_is_running"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="正在试图突破网络传输速度的极限。。。121！ 121！ ？？ 1+2=1？ 唉？1+2 等于几来着？？？"
+        android:textColor="#0ff"
+        android:textSize="19sp"
+        android:textStyle="" />
+
+    <ImageView
+        android:id="@+id/img_server_is_running"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/img_server_running" />
+
+    <com.dxxy.chatwith.widget.ForcedTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_server_is_running"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="此时一位靓仔从我身边一骑绝尘，看发型，那应该是身怀我高攀不到的开发技术，不说了，头冷，以后要戴上我的小帽帽儿~"
+        android:textColor="#abc"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <com.dxxy.chatwith.widget.ForcedTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_server_is_running"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="已开启八百里加急模式...不过话说那么多空位置你们干啥都往我这边挤？？？？？"
+        android:textColor="#ff0"
+        android:textSize="15sp"
+        android:textStyle="" />
+
+    <com.dxxy.chatwith.widget.ForcedTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_server_is_running"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="我觉得只要我跑的够快，是不是别人都看不清写发的是什么 （滑稽）？"
+        android:textColor="#000"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <com.dxxy.chatwith.widget.ForcedTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_server_is_running"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="哎哎哎，三楼干啥呢!说多少次了，不准贴小广告！！！    啊？钱什么钱！  嗯？钱？  那你能给多少啊？（双重滑稽）"
+        android:textColor="#999"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <com.dxxy.chatwith.widget.ForcedTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="你放！。。。。。。。。放心，我刚才以为一只大黑耗子跑过去了=_=!!!"
+        android:textColor="#489bed"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <com.dxxy.chatwith.widget.ForcedTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="温馨提示：如果您发的信息没收到，或者是没收到别人给您发的消息，那么请不要怀疑我的代码，怀疑也没有用，因为据专业开发人员所说，一般代码都会拖到下个版本再改，不要问我下个版本的版本号。嗯，对了，如果真的长时间收不到消息，那么应该是这帮消息迷路了，要么是在楼下棋牌室打牌，请耐心等待，谢谢合作~"
+        android:textColor="#f00"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/text_switch_to_client_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:clickable="true"
+        android:text="点击切换到客户端模式"
+        android:textColor="#283951" />
+
+</RelativeLayout>
