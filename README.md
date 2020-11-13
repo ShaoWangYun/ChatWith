@@ -1,2 +1,2 @@
 # ChatWith
-一个聊天工具
+ChatWith是基于NanoHttpd开发的Android服务器所开发的一款简单的即时通信工具
